@@ -45,7 +45,7 @@ const App = () => (
     </p>
     <div className="card-container">
       {cardsList.map(each => (
-        <CardItem cardInfo={each} />
+        <CardItem cardInfo={each} key={each.id} />
       ))}
     </div>
   </div>
